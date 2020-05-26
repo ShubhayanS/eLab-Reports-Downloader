@@ -45,7 +45,7 @@ This project repository was made for personal use. Feel free to fork the reposit
 
 ### Current Maintainers
 
-[ShubhayanS](https://github.com/ShubhayanS), [Soumya Sinha](https://github.com/harshithmohan), [Sagnik Chatterjee](https://github.com/catthatcodes)
+[ShubhayanS](https://github.com/ShubhayanS), [Soumya Sinha](https://github.com/Soumyasinha29), [Sagnik Chatterjee](https://github.com/sagnik20)
 
 
 That's it. :smiley:
