@@ -10,19 +10,24 @@ from selenium.webdriver.common.by import By
 
 from time import sleep
 
+#URL for OS elab. Change the url below for other eLabs
 url = 'https://care.srmist.edu.in/srmos/login'
+
+
 driver = webdriver.Chrome()
 driver.get(url)
 driver.implicitly_wait(60)
 
-#print("Enter your registration number (case-sensitive)")
-user = input("Enter your registration number (case-sensitive)")
-#user = "RA1711003011375"
 
-#print("Enter your password (case-sensitive)")
-pw = input("Enter your password (case-sensitive)")
-#pw = "soumy@29"
+#Type your Registration ID within quotes below
+user = "RA1711003010769"
+print("Registration Number is - ",user)
 
+#Type your Password within quotes below instead of ???
+pw = "??????????"
+print("Your Pw is - ",pw)
+
+#DONOT Change anything after this point!
 s=".mat-input-element"
 obj= driver.find_elements_by_css_selector(s)
 print(obj)
@@ -49,12 +54,14 @@ qp.click()
 
 prev = driver.find_element_by_xpath("/html/body/app-root/div/app-student-solve/div[1]/button[1]") 
 
+ct=100
 for i in range(100):
-    sleep(10)
-    print("I am in question ",i)
-    sleep(15)
+    print("I am in question number ",ct)
+    ct=ct-1
+    sleep(3)
     try:
         evaluate = driver.find_element_by_xpath("/html/body/app-root/div/app-student-solve/div[2]/app-solve-question/div/div[2]/div[2]/mat-card/div[3]/button[2]")
+        sleep(10)
         evaluate.click()
         result = driver.find_elements_by_xpath("/html/body/app-root/div/app-student-solve/div[2]/app-solve-question/div/div[2]/div[2]/mat-card/div[4]/a[1]")
         txt = result[0].text        
@@ -75,22 +82,22 @@ for i in range(100):
                     j.click()
                 else:
                     opt = 1
-            sleep(10)
+            sleep(5)
             evaluate = driver.find_element_by_xpath("/html/body/app-root/div/app-student-solve/div[2]/app-solve-question/div/div[2]/div[2]/mat-card/div[3]/button[2]")
+            sleep(10)
             evaluate.click()
             result = driver.find_elements_by_xpath("/html/body/app-root/div/app-student-solve/div[2]/app-solve-question/div/div[2]/div[2]/mat-card/div[4]/a[1]")
             txt = result[0].text
             print("CPP ", txt)
-            if(txt == 'RESULT - 100% '):
+            if(txt == 'RESULT - 100%'):
                 report = driver.find_element_by_xpath("/html/body/app-root/div/app-student-solve/div[2]/app-solve-question/div/div[2]/div[2]/mat-card/div[4]/a[2]")
+                sleep(5)
                 report.click()
                 sleep(10)
                 prev.click()
-                break
+                #break
             else:
-                print("QP not evaluated fully")
+                print("Question not evaluated fully in C or C++")
                 prev.click()
     except:
         print("Unknown Error")
-        sleep(5)
-        prev.click()
