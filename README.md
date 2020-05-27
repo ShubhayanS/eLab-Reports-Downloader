@@ -18,7 +18,7 @@ This script is for downloading reports of eLab automatically thus saving the has
 
 Run this script at your own risk. The developers are no way responsible for unforseen issues with  your eLab. However, this script is tested extensively to avoid such circumstances.
 
-## :octocat: Requirements
+### :octocat: Requirements
 
 1. [Python 3](https://www.python.org/downloads/) installed on your system.
 2. Python Selenium (It can be installed by opening CMD and running "pip install selenium")
@@ -33,9 +33,9 @@ Run this script at your own risk. The developers are no way responsible for unfo
 2. Open CMD where the folder is located
 3. Open in elab.py in your notepad editor or any editor of your preference. In the user name variable and pw variable type your registration number and password of elab  and dont forget to save the file in same location.
 4. Again,in the cmd to run the downloader, type ```python elab.py``` .
-5. Your eLab reports will automatically get downloaded and saved in Downloads (default chrome download location) in your PC.
+5. Your eLab reports will automatically get downloaded and saved in Downloads (default chrome download location) in your PC.The elab reprts downloading starts from backwards i.e Question 100.
 
-## :stars: Contribute
+### :stars: Contribute
 
 This project repository was made for personal use. Feel free to fork the repository and make changes corresponding to your eLab to improve support. Some pending work can be :
 
@@ -45,6 +45,8 @@ This project repository was made for personal use. Feel free to fork the reposit
 - [ ] Click-and-go : Allow user to be notified and PDF emailed when report generation is complete
 
 ### Current Maintainers
+
+Show love to our work by "Star" or "Forking" this Repo :heart:
 
 [ShubhayanS](https://github.com/ShubhayanS), [Soumya Sinha](https://github.com/Soumyasinha29), [Sagnik Chatterjee](https://github.com/sagnik20)
 
