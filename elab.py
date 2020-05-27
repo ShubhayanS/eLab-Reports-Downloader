@@ -3,6 +3,7 @@ from selenium import webdriver
 from urllib.parse import quote   
 
 import re
+import sys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
@@ -20,11 +21,11 @@ driver.implicitly_wait(60)
 
 
 #Type your Registration ID within quotes below
-user = "RA1711003010769"
+user = sys.argv[1]
 print("Registration Number is - ",user)
 
 #Type your Password within quotes below instead of ???
-pw = "??????????"
+pw = sys.argv[2]
 print("Your Pw is - ",pw)
 
 #DONOT Change anything after this point!
