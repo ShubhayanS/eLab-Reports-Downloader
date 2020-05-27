@@ -55,7 +55,7 @@ This project repository was made for personal use. Feel free to fork the reposit
 - [ ] Cloud-hosted with full support on Heroku / Ripple / AWS
 - [ ] Click-and-go : Allow user to be notified and PDF emailed when report generation is complete
 
-### Current Maintainers
+### :computer: Current Maintainers
 
 Show love to our work by "Star" or "Forking" this Repo :heart:
 
