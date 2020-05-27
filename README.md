@@ -8,7 +8,7 @@
 
 ## What it does?
 
-This script is for downloading reports of eLab automatically thus saving the hassle of individually downloading the reports.
+This script is for downloading reports of eLab automatically thus saving the hassle of individually downloading the reports. However changing the url in the script, this script can work for other eLabs too.
 
 ```3rd year``` : OS (C, C++)
 
@@ -34,6 +34,17 @@ Run this script at your own risk. The developers are no way responsible for unfo
 3. Open in elab.py in your notepad editor or any editor of your preference. In the user name variable and pw variable type your registration number and password of elab  and dont forget to save the file in same location.
 4. Again,in the cmd to run the downloader, type ```python elab.py``` .
 5. Your eLab reports will automatically get downloaded and saved in Downloads (default chrome download location) in your PC.The elab reprts downloading starts from backwards i.e Question 100.
+
+### :robot: Debugging
+
+Sometimes due to server overloading the script might stop at certain questio - for instance if your script stops at Question  number 75 by throwing error in CMD, then you can rerun the script by changing the question number i.e if its Question number 75 so 100 - 75 = 25. That is the script can continue from where it stopped by changing from 1 to 25.
+
+`qp = driver.find_element_by_css_selector('#svgChart > g > g:nth-child(4) > path:nth-child(1)')` 
+
+to 
+
+`qp = driver.find_element_by_css_selector('#svgChart > g > g:nth-child(4) > path:nth-child(25)')`
+
 
 ### :stars: Contribute
 
