@@ -24,7 +24,7 @@ Run this script at your own risk. The developers are no way responsible for unfo
 2. Python Selenium (It can be installed by opening CMD and running "pip install selenium")
 3. Urllib Library (It can be installed by opening CMD and running "pip install urllib")
 4. Latest version of Google Chrome (>83.0) installed.
-5. Good Internet Connection - Any issues after running the script can be resolved by inproving your connection.
+5. Good Internet Connection - Any issues after running the script can be resolved by inproving your connection. Other issues can be accounted for due to server issues of the host.
 
 
 ### :running: Running
