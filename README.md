@@ -32,7 +32,7 @@ Run this script at your own risk. The developers are no way responsible for unfo
 1. Clone the repository, and navigate to the downloaded folder `eLab-Reports-Downloader`.
 2. Open CMD where the folder is located
 3. Open in elab.py in your notepad editor or any editor of your preference. In the user name variable and pw variable type your registration number and password of elab  and dont forget to save the file in same location.
-4. Again,in the cmd to run the downloader, type ```python elab.py``` .
+4. Again,in the cmd to run the downloader, type ```python elab.py -RA1711003010769 -xyx?????``` .
 5. Your eLab reports will automatically get downloaded and saved in Downloads (default chrome download location) in your PC.The elab reprts downloading starts from backwards i.e Question 100.
 
 ### :robot: Debugging
